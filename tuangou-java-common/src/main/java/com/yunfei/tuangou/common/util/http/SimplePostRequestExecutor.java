@@ -1,6 +1,5 @@
 package com.yunfei.tuangou.common.util.http;
 
-import com.sun.istack.internal.NotNull;
 import com.yunfei.tuangou.common.ens.CodeEnum;
 import com.yunfei.tuangou.common.error.BaseException;
 import com.yunfei.tuangou.common.util.http.apache.ApacheSimplePostRequestExecutor;
@@ -31,7 +30,6 @@ public abstract class SimplePostRequestExecutor<H, P> implements RequestExecutor
         throw new IllegalArgumentException("非法请求参数");
     }
 
-    @NotNull
     public String handleResponse(String responseContent) throws BaseException {
         if (responseContent.isEmpty()) {
             throw new BaseException(CodeEnum.FAIL.getCode(), "无响应内容");
