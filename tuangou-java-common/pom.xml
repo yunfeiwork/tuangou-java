@@ -2,12 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.yunfei.tuangou</groupId>
+        <groupId>com.yunfei</groupId>
         <artifactId>yunfei-tuangou-java</artifactId>
         <version>1.0.B</version>
     </parent>
 
     <artifactId>tuangou-java-common</artifactId>
+    <version>${tuangou-java.version}</version>
     <name>tuangou-java-common</name>
     <url>https://wspace.yunfeiwork.com/apihub/index.html?channelCode=javasdk</url>
     <description>聚合团购券核销 Java SDK公共模块</description>
@@ -99,16 +100,5 @@
             <artifactId>spring-data-redis</artifactId>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
 </project>

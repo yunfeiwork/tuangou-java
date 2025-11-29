@@ -2,12 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.yunfei.tuangou</groupId>
+        <groupId>com.yunfei</groupId>
         <artifactId>yunfei-tuangou-java</artifactId>
         <version>1.0.B</version>
     </parent>
 
     <artifactId>tuangou-java-partner</artifactId>
+    <version>${tuangou-java.version}</version>
     <name>tuangou-java-partner</name>
     <url>https://wspace.yunfeiwork.com/apihub/index.html?channelCode=javasdk</url>
     <description>聚合团购券核销 Java SDK合作伙伴调用模块</description>
@@ -18,7 +19,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yunfei.tuangou</groupId>
+            <groupId>com.yunfei</groupId>
             <artifactId>tuangou-java-common</artifactId>
         </dependency>
         <dependency>
