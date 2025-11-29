@@ -17,6 +17,28 @@
 - tuangou-java-common: SDK公共模块, 如：工具类、异常处理等
 - tuangou-java-partner: 聚合团购各接口实现模块, 如：美团、大众点评、抖音查券、查团购商品信息、核销验券等
 
+### Maven引用方式
+#### pom.xml
+```xml
+<dependency>
+  <groupId>com.yunfei</groupId>
+  <artifactId>tuangou-java-partner</artifactId>
+  <version>1.0.B</version>
+</dependency>
+```
+![输入图片说明](/static/img.png "屏幕截图")
+
+#### settings.xml
+找到`settings.xml`文件，在`<servers>`中添加如下代码
+```xml
+<server>
+    <id>github</id>
+    <username>yunfeiwork</username>
+    <password>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</password>
+</server>
+```
+![输入图片说明](/static/img_1.png "屏幕截图")
+
 ### 调用案例
 ```java
 
