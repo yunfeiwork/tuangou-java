@@ -20,11 +20,23 @@
 ### Maven引用方式
 #### pom.xml
 ```xml
-<dependency>
-  <groupId>com.yunfei</groupId>
-  <artifactId>tuangou-java-partner</artifactId>
-  <version>1.0.B</version>
-</dependency>
+<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
+<repositories>
+    <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/yunfeiwork/tuangou-java</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.yunfei</groupId>
+        <artifactId>tuangou-java-partner</artifactId>
+        <version>1.0.B</version>
+    </dependency>
+</dependencies>
+
 ```
 ![输入图片说明](/static/img.png "屏幕截图")
 
@@ -34,6 +46,7 @@
 <server>
     <id>github</id>
     <username>yunfeiwork</username>
+    <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
     <password>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</password>
 </server>
 ```
