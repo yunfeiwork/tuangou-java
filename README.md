@@ -47,7 +47,7 @@
     <id>github</id>
     <username>yunfeiwork</username>
     <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
-    <password>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</password>
+    <password>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</password>
 </server>
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
