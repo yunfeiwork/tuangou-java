@@ -24,7 +24,6 @@ public class AppTest {
 
         // 如果你希望使用redis管理token，请使用如下代码，推荐实现
         //PartnerRedisConfigImpl config = new PartnerRedisConfigImpl(reids,keyPrefix);
-
         partnerService.addConfig(config.getAppId(), config);
 
         String accessToken = partnerService.getAccessToken();
