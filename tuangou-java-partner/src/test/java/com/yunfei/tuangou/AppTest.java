@@ -36,6 +36,12 @@ public class AppTest {
         Response<ApiBalanceResult> apiBalanceResponse = partnerBizService.apiBalance();
         System.out.println(JSON.toJSONString(apiBalanceResponse));
 
+        // Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryMeituanCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
+        // System.out.println(JSON.toJSONString(couponInfoResultResponse));
+
+        Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.easyQueryCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
+        System.out.println(JSON.toJSONString(couponInfoResultResponse));
+
         // 查门店信息
         Response<List<OpPoiInfoResult>> poiInfoResponse = partnerBizService.poiInfoList(null, 1);
         System.out.println(JSON.toJSONString(poiInfoResponse));
@@ -49,7 +55,7 @@ public class AppTest {
         System.out.println(JSON.toJSONString(tuangouProductResponse));
 
         // 查询抖音团购券信息
-        Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryDouyinCoupon("绑定门店成功后返回的opPoiId", "1075910001130098");
-        System.out.println(JSON.toJSONString(couponInfoResultResponse));
+//        Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryDouyinCoupon("绑定门店成功后返回的opPoiId", "1075910001130098");
+//        System.out.println(JSON.toJSONString(couponInfoResultResponse));
     }
 }
