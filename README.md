@@ -5,7 +5,7 @@
 ### 重要信息
 1. 商务合作洽谈请联系微信`18201986514`（在微信里自行搜索并添加好友，请注明来意） 或点击[【联系作者】](https://wspace.yunfeiwork.com/apihub/index.html?channelCode=javasdk)
 2. 新手重要提示：本项目仅是一个SDK开发工具包，未提供Web实现，建议使用 `maven` 或 `gradle` 引用本项目即可使用本SDK提供的各种功能
-3. 新手或者Java开发新手提问或新开Issue提问前，请先阅读[【常见问题汇总】](https://gitee.com/yunfeiwork/aggregation-verification-api/wikis/QA)，并确保已查阅过 [【抖音美团团购核销API接口文档】](https://gitee.com/yunfeiwork/aggregation-verification-api/wikis/Home) ，避免浪费大家的宝贵时间；
+3. 新手或者Java开发新手提问或新开Issue提问前，请先阅读[【常见问题汇总】](https://gitee.com/yunfeiwork/tuangou-java/wikis/QA)，并确保已查阅过 [【抖音美团团购核销API接口文档】](https://gitee.com/yunfeiwork/tuangou-java/wikis/Home) ，避免浪费大家的宝贵时间；
 
 
 ### 其他说明
@@ -46,7 +46,7 @@
 <server>
     <id>github</id>
     <username>yunfeiwork</username>
-    <password>获取最新password请查看https://gitee.com/yunfeiwork/aggregation-verification-api/wikis/Home</password>
+    <password>获取最新password请查看https://gitee.com/yunfeiwork/tuangou-java/wikis/Home</password>
 </server>
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
