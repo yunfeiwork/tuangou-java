@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yunfei</groupId>
+    <groupId>com.yunfeiwork</groupId>
     <artifactId>yunfei-tuangou-java</artifactId>
     <packaging>pom</packaging>
     <version>1.0.B</version>
@@ -128,13 +128,13 @@
             </dependency>
 
             <dependency>
-                <groupId>com.yunfei</groupId>
+                <groupId>com.yunfeiwork</groupId>
                 <artifactId>tuangou-java-partner</artifactId>
                 <version>${tuangou-java.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.yunfei</groupId>
+                <groupId>com.yunfeiwork</groupId>
                 <artifactId>tuangou-java-common</artifactId>
                 <version>${tuangou-java.version}</version>
             </dependency>

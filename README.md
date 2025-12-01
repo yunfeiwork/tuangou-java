@@ -20,7 +20,6 @@
 ### Maven引用方式
 #### pom.xml
 ```xml
-<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 <repositories>
     <repository>
         <id>github</id>
@@ -31,7 +30,7 @@
 
 <dependencies>
     <dependency>
-        <groupId>com.yunfei</groupId>
+        <groupId>com.yunfeiwork</groupId>
         <artifactId>tuangou-java-partner</artifactId>
         <version>1.0.B</version>
     </dependency>
