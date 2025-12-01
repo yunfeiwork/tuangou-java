@@ -37,7 +37,7 @@
 </dependencies>
 
 ```
-![输入图片说明](/static/img.png "屏幕截图")
+![输入图片说明](/static/img_2.png "屏幕截图")
 
 #### settings.xml
 找到`settings.xml`文件，在`<servers>`中添加如下代码
