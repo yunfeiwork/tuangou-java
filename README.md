@@ -46,7 +46,7 @@
 <server>
     <id>github</id>
     <username>yunfeiwork</username>
-    <password>获取最新password请查看https://gitee.com/yunfeiwork/tuangou-java/wikis/Home</password>
+    <password>获取最新password请查看https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml</password>
 </server>
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
