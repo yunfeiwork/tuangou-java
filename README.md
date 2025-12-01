@@ -40,13 +40,13 @@
 ![输入图片说明](/static/img_2.png "屏幕截图")
 
 #### settings.xml
-找到`settings.xml`文件，在`<servers>`中添加如下代码
+找到`settings.xml`文件，在`<servers>`中添加如下代码，[【获取最新password点我】](https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml)
 ```xml
 <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 <server>
     <id>github</id>
     <username>yunfeiwork</username>
-    <password>获取最新password请查看https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml</password>
+    <password>请联系我方技术提供password</password>
 </server>
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
