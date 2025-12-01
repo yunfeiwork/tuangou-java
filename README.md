@@ -42,11 +42,11 @@
 #### settings.xml
 找到`settings.xml`文件，在`<servers>`中添加如下代码
 ```xml
+<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 <server>
     <id>github</id>
     <username>yunfeiwork</username>
-    <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
-    <password>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</password>
+    <password>获取最新password请查看https://gitee.com/yunfeiwork/aggregation-verification-api/wikis/Home</password>
 </server>
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
