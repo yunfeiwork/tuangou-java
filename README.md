@@ -19,18 +19,6 @@
 
 ### Maven引用方式
 
-#### pom.xml
-```xml
-
-<dependency>
-    <groupId>com.yunfeiwork</groupId>
-    <artifactId>tuangou-java-partner</artifactId>
-    <version>1.0.B</version>
-</dependency>
-
-```
-![输入图片说明](/static/img_2.png "屏幕截图")
-
 #### settings.xml
 找到`settings.xml`文件，配置如下
 ```xml
@@ -58,6 +46,18 @@
 <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
+
+#### pom.xml
+```xml
+
+<dependency>
+    <groupId>com.yunfeiwork</groupId>
+    <artifactId>tuangou-java-partner</artifactId>
+    <version>1.0.B</version>
+</dependency>
+
+```
+![输入图片说明](/static/img_2.png "屏幕截图")
 
 **配置后可能会出现下载包不成功导致本地仓库有目录缓存的问题，可以尝试删除你们本地maven仓库 com/yunfeiwork 下的相关目录，然后重新 `reload all maven` 你的本地项目即可**
 
