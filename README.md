@@ -32,7 +32,7 @@
 ![输入图片说明](/static/img_2.png "屏幕截图")
 
 #### settings.xml
-找到`settings.xml`文件，配置如下 [【获取最新password点我】](https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml)
+找到`settings.xml`文件，配置如下
 ```xml
 <!-- 请在 settings.xml 文件<servers></servers>中设置以下仓库的访问凭证，通常settings.xml在$HOME/.m2/文件目录下。-->
 <server>
