@@ -18,6 +18,8 @@
 - tuangou-java-partner: 聚合团购各接口实现模块, 如：美团、大众点评、抖音查券、查团购商品信息、核销验券等
 
 ### Maven引用方式
+参考文档：[【 GitHub Packages仓库下载jar】](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)
+
 #### pom.xml
 ```xml
 <repositories>
