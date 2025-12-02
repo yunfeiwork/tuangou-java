@@ -18,44 +18,50 @@
 - tuangou-java-partner: 聚合团购各接口实现模块, 如：美团、大众点评、抖音查券、查团购商品信息、核销验券等
 
 ### Maven引用方式
-参考文档：[【 GitHub Packages仓库下载jar】](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)
 
 #### pom.xml
 ```xml
-<repositories>
-    <repository>
-        <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/yunfeiwork/tuangou-java</url>
-    </repository>
-</repositories>
 
-<dependencies>
-    <dependency>
-        <groupId>com.yunfeiwork</groupId>
-        <artifactId>tuangou-java-partner</artifactId>
-        <version>1.0.B</version>
-    </dependency>
-</dependencies>
+<dependency>
+    <groupId>com.yunfeiwork</groupId>
+    <artifactId>tuangou-java-partner</artifactId>
+    <version>1.0.B</version>
+</dependency>
 
 ```
 ![输入图片说明](/static/img_2.png "屏幕截图")
 
 #### settings.xml
-找到`settings.xml`文件，在`<servers>`中添加如下代码，[【获取最新password点我】](https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml)
+找到`settings.xml`文件，配置如下 [【获取最新password点我】](https://gitee.com/yunfeiwork/tuangou-java/wikis/Home?sort_id=15907067#settingsxml)
 ```xml
-<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
+<!-- 请在 settings.xml 文件<servers></servers>中设置以下仓库的访问凭证，通常settings.xml在$HOME/.m2/文件目录下。-->
 <server>
-    <id>github</id>
-    <username>yunfeiwork</username>
-    <password>请联系我方技术提供password</password>
+    <id>tuangou-java</id>
+    <username>6775f438d497cd558d6307ba</username>
+    <password>7x9I6tkB]mKv</password>
 </server>
+
+<!-- 在settings.xml文件<repositories></repositories>节点中加入对应的仓库使用地址；或将这个配置配在你当前项目的pom.xml文件中也可以-->
+<repositories>
+    <repository>
+        <id>tuangou-java</id>
+        <url>https://packages.aliyun.com/692c1367ccf3499544d9cf5a/maven/tuangou-java</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 ```
 ![输入图片说明](/static/img_1.png "屏幕截图")
 
 **配置后可能会出现下载包不成功导致本地仓库有目录缓存的问题，可以尝试删除你们本地maven仓库 com/yunfeiwork 下的相关目录，然后重新 `reload all maven` 你的本地项目即可**
 
-![输入图片说明](https://foruda.gitee.com/images/1764642035148751729/34433a32_15605968.png "屏幕截图")
+![输入图片说明](/static/img_3.png "屏幕截图")
 
 ### 调用案例
 ```java
