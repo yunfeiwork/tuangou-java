@@ -68,10 +68,8 @@ public static void main(String[] args) {
     // RedisTemplateRedisOps redisOps = new RedisTemplateRedisOps(stringRedisTemplate);
     // PartnerRedisConfigImpl config = new PartnerRedisConfigImpl(redisOps, "tuangou_sdk");
 
-    partnerService.addConfig(config.getAppId(), config);
-
-    String accessToken = partnerService.getAccessToken();
-    System.out.println(accessToken);
+    //String accessToken = partnerService.getAccessToken();
+    //System.out.println(accessToken);
 
     PartnerBizService partnerBizService = partnerService.getPartnerBizService();
 
@@ -79,27 +77,40 @@ public static void main(String[] args) {
     Response<ApiBalanceResult> apiBalanceResponse = partnerBizService.apiBalance();
     System.out.println(JSON.toJSONString(apiBalanceResponse));
 
-    // Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryMeituanCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
-    // System.out.println(JSON.toJSONString(couponInfoResultResponse));
+    // 绑定到店综合门店
+    //Response<AppBindShopResult> appBindShopResultResponse = partnerBizService.bindMeituanShop(AppBindMeituanShop.ddzhShop("美团账号Id", "美团账号名称", "美团门店Id", "抖音门店Id", "门店名称", "门店地址", "城市名称"));
+    //System.out.println(JSON.toJSONString(appBindShopResultResponse));
 
+    // 绑定到店餐饮门店
+    //Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryMeituanCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
+    //System.out.println(JSON.toJSONString(couponInfoResultResponse));
+
+    // 绑定抖音门店
+    Response<AppBindShopResult> appBindShopResultResponse = partnerBizService.bindDouyinShop( "抖音账号ID", "抖音门店ID");
+    //Response<AppBindShopResult> appBindShopResultResponse = partnerBizService.bindDouyinShop("绑定美团门店成功后返回的opPoiId", "抖音账号ID", "抖音门店ID");
+
+    // 查门店信息
+    //Response<List<OpPoiInfoResult>> poiInfoResponse = partnerBizService.poiInfoList(null, 1);
+    //System.out.println(JSON.toJSONString(poiInfoResponse));
+
+    // 查询美团团购产品
+    Response<List<TuangouProductInfo>> listResponse = partnerBizService.queryMeituanTuangouProduct(1, "绑定门店成功后返回的opPoiId");
+    System.out.println(JSON.toJSONString(listResponse));
+
+    // 查询抖音团购产品
+    Response<List<TuangouProductInfo>> tuangouProductResponse = partnerBizService.queryDouyinTuangouProduct("绑定门店成功后返回的opPoiId", null);
+    System.out.println(JSON.toJSONString(tuangouProductResponse));
+
+    // 查询团购券信息（自动区分是美团券还是抖音券）
     Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.easyQueryCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
     System.out.println(JSON.toJSONString(couponInfoResultResponse));
 
-    // 查门店信息
-    // Response<List<OpPoiInfoResult>> poiInfoResponse = partnerBizService.poiInfoList(null, 1);
-    // System.out.println(JSON.toJSONString(poiInfoResponse));
-
-    // 查询美团团购产品
-    // Response<List<TuangouProductInfo>> listResponse = partnerBizService.queryMeituanTuangouProduct(1, "绑定门店成功后返回的opPoiId");
-    // System.out.println(JSON.toJSONString(listResponse));
-
-    // 查询抖音团购产品
-    // Response<List<TuangouProductInfo>> tuangouProductResponse = partnerBizService.queryDouyinTuangouProduct("绑定门店成功后返回的opPoiId", null);
-    // System.out.println(JSON.toJSONString(tuangouProductResponse));
+    // 查询美团团购券信息
+    //Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryMeituanCoupon("绑定门店成功后返回的opPoiId", "0103607253231");
 
     // 查询抖音团购券信息
-    // Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryDouyinCoupon("绑定门店成功后返回的opPoiId", "1075910001132098");
-    // System.out.println(JSON.toJSONString(couponInfoResultResponse));
+    //Response<CouponInfoResult> couponInfoResultResponse = partnerBizService.queryDouyinCoupon("绑定门店成功后返回的opPoiId", "1075910001130098");
+    //System.out.println(JSON.toJSONString(couponInfoResultResponse));
 }
 ```
 
