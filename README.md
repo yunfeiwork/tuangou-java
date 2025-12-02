@@ -80,6 +80,8 @@ public static void main(String[] args) {
     // RedisTemplateRedisOps redisOps = new RedisTemplateRedisOps(stringRedisTemplate);
     // PartnerRedisConfigImpl config = new PartnerRedisConfigImpl(redisOps, "tuangou_sdk");
 
+    partnerService.addConfig(config.getAppId(), config);
+
     //String accessToken = partnerService.getAccessToken();
     //System.out.println(accessToken);
 
