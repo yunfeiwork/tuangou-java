@@ -29,19 +29,24 @@
     <password>7x9I6tkB]mKv</password>
 </server>
 
-<!-- 在settings.xml文件<repositories></repositories>节点中加入对应的仓库使用地址；或将这个配置配在你当前项目的pom.xml文件中也可以-->
-<repositories>
-    <repository>
-        <id>tuangou-java</id>
-        <url>https://packages.aliyun.com/692c1367ccf3499544d9cf5a/maven/tuangou-java</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
-</repositories>
+<!-- 在settings.xml文件<profiles></profiles>节点中加入对应的仓库使用地址，<profiles>节点一般存在请注意检查-->
+<profiles>
+    <profile>
+        <id>tuangou-jdk</id>
+        <repositories>
+            <repository>
+                <id>tuangou-java</id>
+                <url>https://packages.aliyun.com/692c1367ccf3499544d9cf5a/maven/tuangou-java</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+</profiles>
 
 <!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
 ```
