@@ -19,38 +19,7 @@
 
 ### Maven引用方式
 
-#### settings.xml
-找到`settings.xml`文件，配置如下
-```xml
-<!-- 请在 settings.xml 文件<servers></servers>中设置以下仓库的访问凭证，通常settings.xml在$HOME/.m2/文件目录下。-->
-<server>
-    <id>tuangou-java</id>
-    <username>6775f438d497cd558d6307ba</username>
-    <password>7x9I6tkB]mKv</password>
-</server>
-
-<!-- 在settings.xml文件<profiles></profiles>节点中加入对应的仓库使用地址，<profiles>节点一般存在请注意检查-->
-<profiles>
-    <profile>
-        <id>tuangou-jdk</id>
-        <repositories>
-            <repository>
-                <id>tuangou-java</id>
-                <url>https://packages.aliyun.com/692c1367ccf3499544d9cf5a/maven/tuangou-java</url>
-                <releases>
-                    <enabled>true</enabled>
-                </releases>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
-            </repository>
-        </repositories>
-    </profile>
-</profiles>
-
-<!-- 如遇到配置后报错或提示401 Unauthorized 请主动联系我方技术人员 -->
-```
-![输入图片说明](/static/img_1.png "屏幕截图")
+[点我查看settings.xml配置](https://gitee.com/yunfeiwork/tuangou-java/blob/master/static/settings_yunfei.xml)
 
 #### pom.xml
 ```xml
